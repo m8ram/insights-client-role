@@ -42,6 +42,11 @@ options:
     - For now, this is just 'insights-client', but it could change in the future so having
     it as a variable is just preparing for that.
     required: false
+  proxy:
+    description:
+    - This set an optional proxy for the insights client to connect through if the client
+    is behind a firewall or requires a proxy. Default is unspecified (none).
+    required: false
 '''
 
 EXAMPLES = '''
@@ -51,6 +56,7 @@ EXAMPLES = '''
       password: "rhn_password" or "{{ redhat_portal_password }}"
       auto_config: False or "{{ auto_config }}"
       authmethod: BASIC or "{{ authmethod }}"
+      proxy: "{{ insights_proxy }}"
   become: true
 
 - name: Configure the insights client to register with RHSM and no display name

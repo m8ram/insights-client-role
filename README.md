@@ -71,6 +71,11 @@ See the section 'Example Playbook' for information on various ways to use these 
     BASIC/CERT - This parameter is used to set the authentication method for the Portal. Default bahavior is BASIC.
     Note: when 'auto_config' is enabled (set to True), CERT will be used if RHSM or Satellite is detected.
 
+* insights_proxy: (optional)
+
+    If the insights client is behind a proxy or firewall, a proxy can be specified. Default is unspecified.
+		Ex: http://user:pass@192.168.100.50:8080 
+
 * ansible_python_interpreter: (see Requirements above to determine if this is needed)
 
     This variable allows you to provide the python interpreter path for ansible to use. This is needed when 
