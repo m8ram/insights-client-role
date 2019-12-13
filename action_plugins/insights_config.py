@@ -17,7 +17,8 @@ class ActionModule(ActionBase):
             password = self._task.args.get('password', None),
             auto_config = self._task.args.get('auto_config', None),
             authmethod = self._task.args.get('authmethod', None),
-            display_name = self._task.args.get('display_name', None)
+            display_name = self._task.args.get('display_name', None),
+            proxy = self._task.args.get('proxy', None)
         )
 
         for k, v in config_vars.items():
