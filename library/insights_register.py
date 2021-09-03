@@ -54,7 +54,7 @@ EXAMPLES = '''
     state: present
 
 # Force a Reregister (for config changes, etc)
-- name: Resgiter the insights client
+- name: Register the insights client
   insights_register:
     state: present
     force_reregister: true
